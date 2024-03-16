@@ -23,7 +23,7 @@
       <!-- search -->
       <section class="w-3/4 mx-auto m-4 p-4">
         <input
-        id="search-field"
+          id="search-field"
           type="text"
           placeholder="Type here"
           class="input input-bordered w-3/4"
@@ -33,6 +33,11 @@
 
       <!-- search result -->
       <section>
+        <!-- spinner -->
+        <div id="loading-spinner" class="text-center my-40 hidden">
+          <span class="loading loading-spinner loading-lg"></span>
+        </div>
+
         <!-- cards -->
         <div
           id="cards"
@@ -53,6 +58,10 @@
               </div>
             </div>
           </div> -->
+        </div>
+
+        <div id="show-details" class="text-center my-5 hidden">
+          <button onclick="handleShowAll()" class="btn btn-secondary">Show all...</button>
         </div>
       </section>
     </main>

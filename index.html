@@ -1,15 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Phone Hunter</title>
-</head>
-<body>
-    <header></header>
-    <main>
-        <h1>Welcome to Phone house</h1>
+
+    <!-- daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-4xl font-semibold text-center p-4">
+        Welcome to Phone house
+      </h1>
+    </header>
+    <main class="max-w-[1300px] mx-auto">
+      <!-- search -->
+      <section class="w-3/4 mx-auto m-4 p-4">
+        <input
+        id="search-field"
+          type="text"
+          placeholder="Type here"
+          class="input input-bordered w-3/4"
+        />
+        <button onclick="handleSearch()" class="btn btn-accent">Search</button>
+      </section>
+
+      <!-- search result -->
+      <section>
+        <!-- cards -->
+        <div
+          id="cards"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-3.5"
+        >
+          <!-- <div class="card w-96 bg-gray-100 shadow-xl">
+            <figure>
+              <img
+                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
     </main>
     <footer></footer>
-</body>
+
+    <!-- scripts -->
+    <script src="./js/phone.js"></script>
+  </body>
 </html>

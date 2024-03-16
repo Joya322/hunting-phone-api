@@ -61,9 +61,30 @@
         </div>
 
         <div id="show-details" class="text-center my-5 hidden">
-          <button onclick="handleShowAll()" class="btn btn-secondary">Show all...</button>
+          <button onclick="handleShowAll()" class="btn btn-secondary">
+            Show all...
+          </button>
         </div>
       </section>
+
+      <!-- phone details modal -->
+      <!-- Open the modal using ID.showModal() method -->
+      <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+      <dialog id="phone_details_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <div id="showDetailsContainer" class="">
+            
+          </div>
+          
+          <p class="py-4">Press ESC key or click the button below to close</p>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </main>
     <footer></footer>
 
